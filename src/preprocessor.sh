@@ -12,7 +12,7 @@ sudo apt install --fix-missings
 sudo apt install --fix-broken
 
 # install basic packages
-sudo apt install vim-gnome zsh git xdotool
+sudo apt install curl wget vim-gnome zsh git xdotool
 
 # simplify password
 # src: http://ubuntuhandbook.org/index.php/2015/06/minimum-password-length-ubuntu/

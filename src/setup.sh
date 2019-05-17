@@ -10,6 +10,12 @@
 
 # download repos
 
+# set env vars
+
+# inject new device entry
+
+# deploy dot files
+
 # deploy keys
 
 # install additional packages

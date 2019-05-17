@@ -60,7 +60,7 @@ main() {
 
     # replace nautilus with nemo & set nemo default
     sudo apt install nemo
-	xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+    xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
 
     # TODO: icing task manager - automate it
 }

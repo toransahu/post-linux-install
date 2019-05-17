@@ -6,6 +6,8 @@
 # Distributed under terms of the MIT license.
 #
 
+# FIXME
+
 GPG_PUBLIC_KEY=989892661D11D494
 
 sudo apt remove firefox

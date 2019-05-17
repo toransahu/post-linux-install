@@ -6,4 +6,4 @@
 # Distributed under terms of the MIT license.
 #
 
-# TODO: slack, skype, postman, redshift, touchpad gesture, intellij idea
+# TODO: slack, skype, postman, redshift, touchpad gesture, intellij idea, keybase

@@ -6,4 +6,10 @@
 # Distributed under terms of the MIT license.
 #
 
-# TODO: slack, skype, postman, redshift, touchpad gesture, intellij idea, keybase
+mkdir -p ~/.temp
+cd ~/.temp
+
+# TODO
+# thunderbird
+# thunderbird plugins
+# thunderbird filters

@@ -11,7 +11,7 @@ mkdir -p  ~/.temp
 cd ~/.temp
 
 # pre-requisites
-sudo apt-get install autoconf automake libtool curl make g++ unzip
+sudo apt-get install autoconf automake libtool curl make g++ unzip -y
 
 # from this link https://github.com/protocolbuffers/protobuf/releases/tag/v3.6.1 
 # download protobuf-all-[VERSION].tar.gz

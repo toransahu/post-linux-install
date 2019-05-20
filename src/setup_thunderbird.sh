@@ -13,3 +13,8 @@ cd ~/.temp
 # thunderbird
 # thunderbird plugins
 # thunderbird filters
+
+pip install mozdownload
+mozdownload --application=thunderbird --version=latest
+tar xvfj $(find . -type f -name thunderbird*.tar.bz2)
+

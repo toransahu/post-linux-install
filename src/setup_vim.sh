@@ -11,9 +11,11 @@
 #--------
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# TODO: install plugin from cli, setup ycm after python setup
+# NOTE: setup ycm after python setup
 vim +PluginInstall
 
+# TODO - migrate from vundle to vim-plug
+# https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
 
 sudo apt install cmake build-essential python3-dev -y
 # NOTE: install go before this
@@ -29,4 +31,32 @@ sudo npm -g install instant-markdown-d
 git clone https://github.com/suan/vim-instant-markdown.git ~/.vim/vim-instant-markdown
 mv ~/.vim/vim-instant-markdown/after ~/.vim/after
 
+# setup eclim - http://eclim.org/install.html#installer
+## prerequisites 
+#- Java Development Kit 1.8 or greater
+#- Vim 7.1 or greater
+#- Eclipse 4.8.x (Photon)
+#- python (2.7 or 3.x)
+#- make
+#- gcc
 
+
+mkdir -p ~/.temp
+cd ~/.temp
+
+## install eclipse photon
+wget http://eclipse.stu.edu.tw/technology/epp/downloads/release/photon/R/eclipse-java-photon-R-linux-gtk-x86_64.tar.gz -O eclipse-java-photon-linux-64.tar.gz
+
+sudo tar -xvzf eclipse-java-photon-linux-64.tar.gz -C /opt
+
+## install eclim
+wget https://github.com/ervandew/eclim/releases/download/2.8.0/eclim_2.8.0.bin
+chmod +x eclim_2.8.0.bin
+./eclim_2.8.0.bin \
+  --yes \
+  --eclipse=/opt/eclipse \
+  --vimfiles=$HOME/.vim \
+  --plugins=jdt
+
+### NOTE - to manually start eclim server
+#$ECLIPSE_HOME/eclimd

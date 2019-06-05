@@ -34,6 +34,19 @@ sudo apt install docker-ce
 sudo usermod -aG docker $USER
 
 # Check that the installation was successful by running the built-in “Hello World” program:
-docker run hello-world
+# docker run hello-world  # by default will need sudo, check EOF
 
+## (Optional)
+
+# Add the docker group if it doesn't already exist:
+sudo groupadd docker
+
+# Add the connected user "$USER" to the docker group. Change the user name to match your preferred user if you do not want to use your current user:
+sudo gpasswd -a $USER docker
+
+# Either do a newgrp docker or log out/in to activate the changes to groups.
+newgrp docker
+
+# You can use
+docker run hello-world
 

@@ -10,6 +10,10 @@
 mkdir -p ~/.temp
 cd ~/.temp
 
-pip install mozdownload
-mozdownload --version=latest
-tar xvfj $(find . -type f -name firefox*.tar.bz2)
+# use snap version
+snap install firefox
+
+# native
+#pip install mozdownload
+#mozdownload --version=latest
+#tar xvfj $(find . -type f -name firefox*.tar.bz2)

@@ -31,3 +31,6 @@ make
 sudo make install
 #sudo make uninstall
 #sudo apt autoremove
+
+# for GUI version
+sudo apt install network-manager-openvpn enetwork-manager-openvpn-gnome

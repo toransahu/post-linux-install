@@ -34,3 +34,12 @@ sudo make install
 
 # for GUI version
 sudo apt install network-manager-openvpn enetwork-manager-openvpn-gnome
+
+# to uninstall
+sudo make uninstall
+
+# troubleshoot intermittent issue
+# src: https://askubuntu.com/questions/812714/run-resolvconf-resolv-conf-gets-erased-each-time-i-restart-and-i-cant-use-int
+    # main cmd worked on 16/jun/19 with ovpn2.4.4 (from cannonical repo)
+    # sudo apt-get -o Dpkg::Options::="--force-confmiss" install --reinstall resolvconf
+    # gnome version of ovpn not working with above

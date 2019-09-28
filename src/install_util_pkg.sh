@@ -8,4 +8,13 @@
 
 
 # dir tree 
-sudo apt install tree
+sudo apt install tree 
+
+# text to ascii art
+sudo apt install figlet 
+
+# quote with cow 
+sudo apt install cowsay 
+
+# screenshot-ter
+sudo apt install shutter

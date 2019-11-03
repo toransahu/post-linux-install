@@ -18,3 +18,6 @@ sudo apt install cowsay
 
 # screenshot-ter
 sudo apt install shutter
+
+# htop
+sudo apt install htop

@@ -104,6 +104,7 @@ setupCOC(){
     npm install coc-java --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
     npm install coc-json --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
     npm install coc-tsserver --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+    npm install coc-tabnine --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 }
 
 setup(){

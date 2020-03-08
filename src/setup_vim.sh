@@ -108,10 +108,10 @@ setupCOC(){
 }
 
 setup(){
-    # setupVundle()
-    setupCOC()
-    setupVimInstantMarkdown()
-    # setupEclim()
+    # setupVundle
+    setupCOC
+    setupVimInstantMarkdown
+    # setupEclim
 }
 
-setup()
+setup

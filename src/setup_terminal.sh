@@ -18,7 +18,8 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 cp ../../linux-tweaks/backups/.zshrc ~/
 
 # setup zsh as default
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
+# sudo usermod -s $(which zsh) $USER 
 
 # install powerline fonts
 sudo apt install tmux fonts-powerline

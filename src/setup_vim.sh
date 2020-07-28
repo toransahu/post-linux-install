@@ -104,8 +104,9 @@ setupCOC(){
     npm install coc-java --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
     npm install coc-json --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
     npm install coc-tsserver --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
-    # npm install coc-tabnine --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod  # use codota/tabnine-vim
+    # npm install coc-tabnine --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod  # use Plug 'codota/tabnine-vim'
     npm install coc-git --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+    npm install coc-vimlsp --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 }
 
 setup(){

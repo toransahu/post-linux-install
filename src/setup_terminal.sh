@@ -9,6 +9,9 @@
 mkdir -p ~/.temp
 cd ~/.temp
 
+## zsh
+sudo apt install zsh -y
+
 ## oh-my-zsh
 
 rm -rf $HOME/.oh-my-zsh

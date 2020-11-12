@@ -6,6 +6,20 @@
 # Distributed under terms of the MIT license.
 #
 
+install_vim(){
+    cd $WORKSPACE
+    git clone https://github.com/vim/vim.git
+    cd vim/src
+    make
+}
+
+# alernatives
+install_upgrade_vim_from_ppa(){
+    sudo add-apt-repository ppa:jonathonf/vim
+    sudo apt update
+    sudo apt install vim
+}
+
 
 setupVundle(){
     ## vundle
@@ -110,6 +124,7 @@ setupCOC(){
 }
 
 setup(){
+    install_vim &&
     # setupVundle
     setupCOC
     setupVimInstantMarkdown

@@ -18,7 +18,7 @@ rm -rf $HOME/.oh-my-zsh
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # TODO: restore .zshrc
-cp ../../linux-tweaks/backups/.zshrc ~/
+# cp ../../linux-tweaks/backups/.zshrc ~/
 
 # setup zsh as default
 sudo chsh -s $(which zsh)

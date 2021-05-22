@@ -6,7 +6,7 @@
 # Distributed under terms of the MIT license.
 #
 
-VERSION=1.14
+VERSION=1.16
 
 # uninstall existing version
 sudo rm -rf /usr/local/go

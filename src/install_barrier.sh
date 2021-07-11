@@ -21,3 +21,5 @@ git submodule update --init --recursive
 ./clean_build.sh
 cd build
 sudo make install # install to /usr/local/
+
+sudo ufw allow 24800/tcp

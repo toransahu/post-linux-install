@@ -18,7 +18,7 @@ install_vim(){
     ./configure --prefix=/usr/local \
      --enable-python3interp \
      --with-python3-config-dir=/usr/lib/python3.8/config-*
-    cd vim/src
+    cd src
     make
     sudo make install
 }

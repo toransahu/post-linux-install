@@ -6,7 +6,10 @@
 # Distributed under terms of the MIT license.
 #
 
+# init
+
 # preprocess
+sh preprocessor.sh
 
 # download repos
 

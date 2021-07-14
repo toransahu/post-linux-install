@@ -10,6 +10,8 @@
 mkdir -p ~/.vim
 
 install_vim(){
+    # pre-req
+    sudo apt install libncurses-dev -y
     cd $WORKSPACE
     git clone https://github.com/vim/vim.git
     cd vim/src
@@ -130,7 +132,7 @@ setup(){
     install_vim &&
     # setupVundle
     setupCOC
-    setupVimInstantMarkdown
+    # setupVimInstantMarkdown
     # setupEclim
 }
 

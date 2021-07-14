@@ -23,6 +23,7 @@ wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/
 wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_keys.sh | sh
 
 # install additional packages
+wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_additional_pkg.sh | sh
 
 # setup git
 wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_git.sh | sh

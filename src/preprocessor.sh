@@ -33,6 +33,7 @@ DEFAULT_WORKSPACE=~/disk/E/workspace
 
 create_workspace() {
     mkdir -p $DEFAULT_WORKSPACE
+    echo created default workspace '$DEFAULT_WORKSPACE'
 }
 
 copy_paths_sh_to_home() {

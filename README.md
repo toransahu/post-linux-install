@@ -1,3 +1,15 @@
+# Installation
+
+Bootstrap (with my preferences & configs! Yeah, way more that just deploying the `dotfiles`) a newly installed Linux (debian).
+
+```
+wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup.sh | sh
+```
+
+It's as simple as that.
+
+# TODOs
+
 0. simplify password
 	- http://ubuntuhandbook.org/index.php/2015/06/minimum-password-length-ubuntu/
 - install cinnamon & lightdm

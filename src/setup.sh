@@ -9,7 +9,7 @@
 # init
 
 # preprocess
-sh preprocessor.sh
+wget https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/preprocessor.sh | bash
 
 # download repos
 

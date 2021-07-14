@@ -32,7 +32,7 @@ install_basic_deb_pkg() {
 DEFAULT_WORKSPACE=~/disk/E/workspace
 
 create_workspace() {
-    mkdir -p DEFAULT_WORKSPACE
+    mkdir -p $DEFAULT_WORKSPACE
 }
 
 copy_paths_sh_to_home() {

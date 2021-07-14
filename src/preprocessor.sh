@@ -23,7 +23,7 @@ fix_missing_broken_debian() {
 
 # install basic packages
 install_basic_deb_pkg() {
-    sudo apt install curl wget vim-gnome zsh git xdotool gnustep-gui-runtime -y
+    sudo apt install curl wget vim zsh git xdotool gnustep-gui-runtime -y
 }
                                                     # say
 # simplify password

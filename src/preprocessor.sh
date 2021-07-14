@@ -61,3 +61,5 @@ main() {
     copy_paths_sh_to_home
     restore_config_files
 }
+
+main

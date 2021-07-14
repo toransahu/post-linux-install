@@ -20,15 +20,17 @@ wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/
 # deploy dot files
 
 # deploy keys
+wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_keys.sh | sh
 
 # install additional packages
 
 # setup git
-
-# setup terminal
+wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_git.sh | sh
 
 # setup python
+wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_python.sh | sh
 
-# setup vim
+# setup terminal
+wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_terminal.sh | sh
 
 # setup cinnamon

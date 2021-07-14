@@ -6,6 +6,9 @@
 # Distributed under terms of the MIT license.
 #
 
+. ~/paths.sh
+mkdir -p ~/.vim
+
 install_vim(){
     cd $WORKSPACE
     git clone https://github.com/vim/vim.git

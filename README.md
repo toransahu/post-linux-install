@@ -1,8 +1,8 @@
 # Installation
 
-Bootstrap (with my preferences & configs! Yeah, way more that just deploying the `dotfiles`) a newly installed Linux (debian).
+Bootstrap (with my preferences & configs - Yeah, way more than just deploying the `dotfiles`) a newly installed Linux (debian).
 
-```
+```bash
 wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup.sh | sh
 ```
 

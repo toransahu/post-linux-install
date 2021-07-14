@@ -22,7 +22,6 @@ sudo apt install checkinstall
 
 sudo rm -rf /usr/local/share/vim /usr/bin/vim
 
-cd ~
 git clone https://github.com/vim/vim
 cd vim
 git pull && git fetch

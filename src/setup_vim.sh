@@ -13,14 +13,6 @@ install_vim(){
     wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/install_vim.sh | sh
 }
 
-# alernatives
-install_upgrade_vim_from_ppa(){
-    sudo add-apt-repository ppa:jonathonf/vim
-    sudo apt update
-    sudo apt install vim
-}
-
-
 setupVundle(){
     ## vundle
     #--------

@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 #
 # install_kdeconnect.sh
 # Copyright (C) 2020 Toran Sahu <toran.sahu@yahoo.com>
@@ -10,27 +10,15 @@
 install_on_ubuntu () {
     sudo apt install kdeconnect -y
 
+    # indicator
+    sudo add-apt-repository ppa:webupd8team/indicator-kdeconnect
+    sudo apt update
+    sudo apt install kdeconnect indicator-kdeconnect
+
     # allow ports in firewall
     sudo ufw allow 1714:1764/udp
     sudo ufw allow 1714:1764/tcp
     sudo ufw reload
 }
 
-main () {
-    if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        install_on_ubuntu
-    elif [[ "$OSTYPE" == "darwin"* ]]; then
-            # Mac OSX
-    elif [[ "$OSTYPE" == "cygwin" ]]; then
-            # POSIX compatibility layer and Linux environment emulation for Windows
-    elif [[ "$OSTYPE" == "msys" ]]; then
-            # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
-    elif [[ "$OSTYPE" == "win32" ]]; then
-            # I'm not sure this can happen.
-    elif [[ "$OSTYPE" == "freebsd"* ]]; then
-            # ...
-    else
-        echo Unknown OS!
-    fi
-
-}
+install_on_ubuntu

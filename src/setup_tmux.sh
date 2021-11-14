@@ -17,6 +17,7 @@ install_update_tmux(){
     sudo apt install -y pkg-config
     sudo apt install -y libevent-dev
     sudo apt install -y libncurses5-dev
+    sudo apt install -y xclip
     
     rm -fr /tmp/tmux
     
@@ -45,9 +46,16 @@ install_tpm(){
     # $ tmux source ~/.tmux.conf
 }
 
+install_tmux_yank(){
+    # if does not work by tmux pkg mngr (TPN), then do it manually
+    git clone https://github.com/tmux-plugins/tmux-yank ~/.tmux/plugins/tmux-yank
+
+}
+
 setup(){
     install_update_tmux
     install_tpm
+    install_tmux_yank
 }
 
 setup

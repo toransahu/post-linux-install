@@ -10,15 +10,15 @@ mkdir -p ~/.temp
 cd ~/.temp
 
 setup_zsh() {
-wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_zsh.sh | sh
+curl -fsSL https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_zsh.sh | sh
 }
 
 setup_vim() {
-wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_vim.sh | sh
+curl -fsSL https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_vim.sh | sh
 }
 
 setup_tmux() {
-wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_tmux.sh | sh
+curl -fsSL https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/setup_tmux.sh | sh
 }
 
 setup() {

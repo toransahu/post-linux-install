@@ -19,5 +19,8 @@ export PATH=$PATH:/usr/local/go/bin
 # source ~/.profile
 # echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.profile
 
+# ship with debugger
+go install github.com/go-delve/delve/cmd/dlv@latest
+
 # for personal repos
 git config --global url."git@github.com:".insteadOf "https://github.com/"

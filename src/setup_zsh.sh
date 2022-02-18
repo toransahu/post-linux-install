@@ -40,9 +40,8 @@ setup_zsh() {
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install
     
-    # TODO: Rg 
-    curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.1/ripgrep_11.0.1_amd64.deb
-    sudo dpkg -i ripgrep_11.0.1_amd64.deb
+    # install rg 
+    curl -fsSL https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/install_ripgrep.sh | sh
     
     source ~/.zshrc
 }

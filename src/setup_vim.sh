@@ -87,9 +87,10 @@ setupCOC(){
     # Use package feature to install coc.nvim
     
     # for vim8
-    mkdir -p ~/.vim/pack/coc/start
-    cd ~/.vim/pack/coc/start
-    curl --fail -L https://github.com/neoclide/coc.nvim/archive/release.tar.gz | tar xzfv -
+    mkdir -p ~/.vim/plugged/
+    cd ~/.vim/plugged/
+    curl --fail -L https://github.com/neoclide/coc.nvim/archive/release.tar.gz -o | tar xzfv -
+    mv coc.nvim-release coc.nvim  # so that its in sync with vim-plug
     # for neovim
     # mkdir -p ~/.local/share/nvim/site/pack/coc/start
     # cd ~/.local/share/nvim/site/pack/coc/start
@@ -102,17 +103,21 @@ setupCOC(){
     then
       echo '{"dependencies":{}}'> package.json
     fi
-    # Change extension names to the extensions you need
-    npm install coc-snippets --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
-    npm install coc-prettier --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
-    # npm install coc-go --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod  # use fatih/vim-go
+    # LSPs
+    # Install coc-go as I'm not using fatih/vim-go until I need those debug/test etc. features
+    npm install coc-go --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
     npm install coc-pyright --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
     npm install coc-java --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
-    npm install coc-json --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
     npm install coc-tsserver --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
-    # npm install coc-tabnine --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod  # use Plug 'codota/tabnine-vim'
-    npm install coc-git --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+    npm install coc-sh --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
     npm install coc-vimlsp --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+    npm install coc-json --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+    # Others
+    npm install coc-snippets --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+    npm install coc-prettier --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+    # use Plug 'codota/tabnine-vim' or github's code-pilot
+    # npm install coc-tabnine --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
+    npm install coc-git --global-style --ignore-scripts --no-bin-links --no-package-lock --only=prod
 }
 
 setup(){

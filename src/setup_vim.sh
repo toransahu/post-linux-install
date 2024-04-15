@@ -10,7 +10,7 @@
 mkdir -p ~/.vim
 
 install_vim(){
-    wget -O - https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/install_vim.sh | sh
+    curl -fsSL https://raw.githubusercontent.com/toransahu/post-linux-install/master/src/install_vim.sh | sh
 }
 
 setupVundle(){
